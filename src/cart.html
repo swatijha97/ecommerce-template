@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>My First Parcel App</title>
+    <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <span>Mid-Season Sale Up to 70% OFF </span>
+      </div>
+
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light py-3 sticky-navbar"
+      >
+        <a class="navbar-brand" href="#">
+          <img
+            src="../src/assets/images/logo.png"
+            class="site-logo"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-around"
+          id="navbarSupportedContent"
+        >
+          <div class="brand-name">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active list-items"
+                  aria-current="page"
+                  href="#"
+                  >NEW IN</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-items" href="#">TREND</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-items" href="#">COLLECTION</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-items" href="#">CHILD THEMES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-items" href="#">DEMO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-items" href="#">SHOP INSTAGRAM</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-items" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link list-items" href="#">BRAND</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="collapse navbar-collapse justify-content-around"
+          id="navbarSupportedContent"
+        >
+          <div class="brand-name">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#" class="nav-link icon-nav">
+                  <i class="bi bi-search"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link icon-nav">
+                  <i class="bi bi-person"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link icon-nav">
+                  <i class="bi bi-suit-heart"></i>
+                </a>
+              </li>
+              <li class="nav-item" id="barbtn" onclick="opensidebar()">
+                <span class="nav-link icon-nav">
+                  <i class="bi bi-cart-dash"></i>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="cartbox">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="card card-shadow">
+              <div class="heading-text maincart">
+                <div class="product-heading">
+                  <h3>My Cart (1)</h3>
+                </div>
+                <div class="product-search">
+                  <i class="bi bi-geo-alt"></i>
+                  <span>Deliver to</span>
+                  <input
+                    type="text"
+                    placeholder="Enter delivery pincode"
+                    class="search-field"
+                  />
+                  <span class="checkbtn"><a href="#">Check</a></span>
+                </div>
+              </div>
+              <!-- <img class="card-img-top" alt="Card image cap" /> -->
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <div class="row">
+                  <div class="col-md-2">
+                    <img
+                      src="https://rukminim1.flixcart.com/image/612/612/kvcpn680/pen/p/n/k/8663-doms-original-imag8a2dehqp6p2z.jpeg?q=70"
+                      alt="cartimg1"
+                      class="cart_img"
+                    />
+                  </div>
+                  <div class="col-md-5">
+                    <div class="cardproductdetails">
+                      <div class="productdetails-name">
+                        <a href="#"
+                          >3SIX5 Golden New Trending Chain Gold-plated Plated
+                          Brass Chain</a
+                        >
+                      </div>
+                      <div class="productseller-name">
+                        <a href="#">Seller:JATINSALES007</a>
+                      </div>
+                      <div class="productdetails">
+                        <span class="productdetailsone">Rs-158</span>
+                        <span class="productdetailstwo">88% Off </span>
+                        <span class="productdetailsthree">1 offer applied</span>
+
+                        <p class="productwarn">Or pay Rs-128/-</p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="col-md-5">
+                    <div class="deliverydate">
+                      <p>Delivery by Fri Feb 4 | ₹40</p>
+                      <p class="small-text">10 Days Replacement Policy</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                <div class="buttonsection">
+                  <div class="btn-grp">
+                    <div class="minusbtn">
+                      <i class="bi bi-dash-circle"></i>
+                    </div>
+                    <div class="box">
+                      <span>1</span>
+                    </div>
+                    <div class="plusbtn">
+                    <i class="bi bi-plus-circle"></i>
+                  </div>
+                 <div class="savelatertxt">
+                    <div class="savebtn">
+                    <a href="#">
+                      <span>Save for later</span>
+                    </a>
+                  </div>
+                  <div class="removebtn">
+                    <a href="#">
+                      <span>Remove</span>
+                    </a>
+                  </div>
+                 </div>
+                </div>
+              </div>
+            </div>
+            <div class="placeorderbtn">
+                      <button class="btn orderbtn btn btn-success btn-lg">
+                        Place Order
+                      </button>
+                    </div>
+          </div>
+         
+        </div>
+         <div class="col-md-4">
+            <div class="card card-shadow">
+              <div class="price-heading">
+                <h3>Price Details</h3>
+              </div>
+              <!-- <img class="card-img-top" alt="Card image cap" /> -->
+              <div class="card-body">
+             
+                <div class="pricedetails">
+                  <p class="pricetext">Price(1 item)</p>
+                  <p class="priceamount">Rs1,599</p>
+                </div>
+                <div class="disdetails">
+                  <p class="distext">Discount</p>
+                  <p class="disamount">Rs -158</p>
+                </div>
+                <div class="coupondetails">
+                  <p class="coupontext">Coupons for you</p>
+                  <p class="couponamount">Rs1,599</p>
+                </div>
+                <div class="Deliverydetails">
+                  <p class="Deliverytext">Delivery Charges</p>
+                  <p class="Deliveryamount">Free</p>
+                </div>
+                <div class="totalamou">
+                  <p class="totaltext">Total Amount</p>
+                  <p class="totalamount">Rs1,296</p>
+                </div>
+                <div class="finaltext">
+                  <p class="finalsuccess">You will save Rs303 on this order</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="col-md-7">
+          
+        </div>
+        <div class="col-md-5"></div>
+      </div>
+    </footer>
+    
+  </body>
+</html>

@@ -1,0 +1,549 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.topbar {
+  background: #ededed;
+  text-align: center;
+  padding: 5px;
+}
+
+.topbar span {
+  color: #f30404;
+  font-size: 14px;
+}
+
+.site-logo {
+  width: 100px;
+  margin-left: 50px;
+}
+
+.nav-item .nav-link.list-items,
+.nav-item .nav-link.list-items:hover {
+  font-weight: bold;
+  color: #000;
+}
+
+.icon-nav i {
+  font-size: 25px;
+  font-weight: bold;
+  color: #000;
+}
+
+.list-items {
+  margin-right: 15px;
+  position: relative;
+}
+
+.brand-name {
+  margin-left: 50px;
+}
+
+.nav-item .list-items.nav-link {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.list-items::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0px;
+  background: currentColor;
+  width: 100%;
+  height: 1px;
+  bottom: 10px;
+  transition: all 0.5s;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.list-items:hover::before {
+  transform: scaleX(1);
+}
+
+.banner-img {
+  position: relative;
+}
+
+.banner-content {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.banner-text {
+  line-height: 2.5;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.banner-heading {
+  line-height: 1.5;
+  letter-spacing: 3px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.banner-para {
+  color: #fff;
+  width: 33%;
+  text-align: center;
+  line-height: 1.8;
+  margin-top: 20px;
+}
+
+.shop-btn {
+  background: #f30404;
+  border: 1px solid #f30404;
+  border-radius: 30px;
+  margin-top: 25px;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+}
+
+.shop-btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.shop-btn:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  transition: all 1s;
+}
+
+.shop-btn a:hover {
+  color: #000 !important;
+  transition: all 1s;
+}
+
+.main-carousel .carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  border: 1px solid #ededed;
+  border-radius: 50px;
+  background-size: 35px;
+}
+
+.main-carousel .carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+  border: 1px solid #ededed;
+  border-radius: 50px;
+  background-size: 35px;
+}
+
+.dealofday_card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.dealofday_card_details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ededed;
+  padding: 5px 0px;
+}
+
+.dealofday_card_heading {
+  display: flex;
+  /* justify-content: space-evenly; */
+  justify-content: space-between;
+  width: 50%;
+}
+
+.imptext i {
+  margin-right: 4px;
+}
+
+.dealofday_impttext {
+  color: #f30404;
+  font-size: 19px;
+}
+
+.dealofday_newdealsdetails {
+  font-size: 19px;
+}
+
+.btn_veiwall {
+  background: #2874f0;
+  border: 1px solid #2874f0;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.dealofday_card_heading .card-title {
+  font-size: 30px;
+}
+
+.dealofday_productdetails {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  height: 250px;
+  transition: all 4s;
+}
+
+.dealofday_prodimg {
+  margin-bottom: 15px;
+  filter: grayscale(100%);
+  height: auto;
+}
+
+.btn_veiwall a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.productName,
+.productDiscount,
+.productBrand {
+  line-height: 2;
+  white-space: nowrap;
+  width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productName {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.productDiscount {
+  color: #008000f2;
+  font-size: 15px;
+  text-align: center;
+}
+
+.productBrand {
+  font-size: 14px;
+  text-align: center;
+}
+
+div#sidebarcust {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  right: 0;
+  background: #fff;
+  width: 25%;
+  min-width: 30%;
+  height: 100%;
+  padding: 10px 15px;
+}
+
+.margin-cart {
+  margin-top: 4rem;
+}
+
+.inputfield {
+  border: 0;
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+}
+
+.form-control.inputfield:focus {
+  box-shadow: none;
+}
+
+.inputfield::placeholder {
+  font-weight: bold;
+  position: relative;
+  right: 8px;
+}
+
+.shoppingbtn {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.shoppingbtn {
+  border: 2px solid #000;
+  padding: 5px 0px;
+}
+
+.shopping {
+  background: transparent;
+  border: 0;
+  font-weight: bold;
+}
+
+.closebtn .close-link {
+  float: right;
+  color: #000;
+  text-decoration: none;
+}
+
+.closebtn .close-link i {
+  font-size: 25px;
+}
+
+.closebtn .close-link span {
+  position: relative;
+  bottom: 4px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+#sidebarcust {
+  display: none;
+}
+
+.deal-of-day {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 15px 0px;
+}
+
+.dealofday_productimg {
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.dealofday_productdetails:hover {
+  border: 1px solid red;
+  transition: all 4s;
+}
+
+.card-shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 45px;
+}
+
+.heading-text {
+  border-bottom: 1px solid #eee;
+}
+
+.maincart {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.search-field {
+  border: 0;
+  border-bottom: 3px solid #0d6efd;
+}
+
+.product-search i {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.product-search span {
+  font-size: 15px;
+  font-weight: 600;
+  color: #878787;
+  font-family: Arial, sans-serif;
+}
+
+.search-field::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  word-spacing: 2px;
+  letter-spacing: 0;
+  color: #878787;
+  font-family: Arial, sans-serif;
+}
+
+.search-field:focus-visible {
+  outline: none;
+}
+
+.checkbtn a {
+  text-decoration: none;
+  color: #878787;
+  line-height: 1.5;
+  padding: 4px 0px;
+  border-bottom: 3px solid #0d6efd;
+  cursor: no-drop;
+}
+
+.cart_img {
+  width: 33%;
+}
+
+.productdetails-name {
+  white-space: nowrap;
+  width: 315px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productdetails-name a {
+  color: #000;
+  text-decoration: none;
+}
+
+.productseller-name a {
+  text-decoration: none;
+  color: #bbbbbb;
+  font-size: 14px;
+}
+
+.productdetailsone {
+  font-weight: bold;
+}
+
+.productdetailstwo,
+.productdetailsthree {
+  color: #015b01;
+  font-weight: bold;
+}
+
+.cart_img {
+  width: 85%;
+  height: 65%;
+  object-fit: contain;
+}
+
+.savebtn,
+.removebtn {
+  margin: 5px 10px;
+}
+
+.btn-grp {
+  display: flex;
+}
+
+.buttonsection {
+  display: flex;
+  margin-top: 25px;
+}
+
+.box {
+  margin-right: 10px;
+  border: 1px solid #000;
+  width: 35px;
+  height: 28px;
+  text-align: center;
+  height: 25px;
+  margin-top: 8px;
+}
+
+.minusbtn {
+  margin-right: 10px;
+}
+
+.minusbtn i,
+.plusbtn i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.savebtn a,
+.removebtn a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.savelatertxt {
+  display: flex;
+  margin-left: 15px;
+}
+
+.deliverydate p {
+  margin-bottom: 0px;
+}
+
+.small-text {
+  color: #b3b2b2;
+  font-size: 13px;
+}
+
+.productdetails {
+  margin-top: 20px;
+}
+
+p.productwarn {
+  margin-bottom: 0;
+  font-size: 15px;
+}
+
+.placeorderbtn {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.pricedetails,
+.disdetails,
+.coupondetails,
+.Deliverydetails,
+.totalamou {
+  display: flex;
+  justify-content: space-between;
+}
+
+.disamount,
+.couponamount,
+.Deliveryamount {
+  color: #008000db;
+}
+
+.totalamou {
+  font-weight: bold;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0px;
+  margin: 10px 0px;
+}
+
+.totaltext,
+.totalamount,
+.finalsuccess {
+  margin-bottom: 0;
+}
+
+.finaltext {
+  color: #027302;
+  font-size: 17px;
+}
+
+.product-heading h3 {
+  font-size: 20px;
+  margin-bottom: 0;
+  margin-top: 12px;
+}
+
+.price-heading h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+
+.price-heading {
+  border-bottom: 1px solid #eee;
+  padding: 12px;
+}
+
+/*# sourceMappingURL=/main.39afc03c.css.map */
